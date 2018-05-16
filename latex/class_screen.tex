@@ -1,0 +1,137 @@
+\hypertarget{class_screen}{}\section{Screen Class Reference}
+\label{class_screen}\index{Screen@{Screen}}
+
+
+The \hyperlink{class_screen}{Screen} class funciona criando e editando telas de desenho.  
+
+
+
+
+{\ttfamily \#include $<$screen.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_ae7576476fc6e6a6eaa66389fdc41fe72}\label{class_screen_ae7576476fc6e6a6eaa66389fdc41fe72}} 
+\hyperlink{class_screen_ae7576476fc6e6a6eaa66389fdc41fe72}{Screen} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_screen}{Screen} Cria uma tela vazia sem tamanho e define o brush como \textquotesingle{}\#\textquotesingle{}. \end{DoxyCompactList}\item 
+\hyperlink{class_screen_ab41e0f2754e0a7831a8fc3211bcdabca}{Screen} (int nlin\+\_\+, int ncol\+\_\+)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_screen}{Screen} Cria uma tela vazia de tamanho pŕe-\/definido e com brush padrão \char`\"{}\#\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_screen_a12eef567d26f6cb00981da6384be2eac}{new\+Matriz} (int nlin\+\_\+, int ncol\+\_\+)
+\begin{DoxyCompactList}\small\item\em new\+Matriz Define o tamanho de uma tela. \end{DoxyCompactList}\item 
+void \hyperlink{class_screen_ae6bea81c57a22d226507c3c26fa95ee0}{set\+Pixel} (int x, int y)
+\begin{DoxyCompactList}\small\item\em set\+Pixel Desenha um pixel da matriz usando o caratere guardado em \textquotesingle{}brush\textquotesingle{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_screen_a35e74266b2a04e37b354ceff7a5f1031}\label{class_screen_a35e74266b2a04e37b354ceff7a5f1031}} 
+void \hyperlink{class_screen_a35e74266b2a04e37b354ceff7a5f1031}{clear} ()
+\begin{DoxyCompactList}\small\item\em clear Limpa a tela. \end{DoxyCompactList}\item 
+void \hyperlink{class_screen_a01312ae6a1168ec0a02c24877059571f}{set\+Brush} (char brush\+\_\+)
+\begin{DoxyCompactList}\small\item\em set\+Brush Muda o caractére do desenho. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_screen_aab6a2880746bfe1b7964817cc8f0989e}{operator$<$$<$} (ostream \&os, \hyperlink{class_screen}{Screen} \&t)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ Envia um objeto da classe \hyperlink{class_screen}{Screen} como saída. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_screen}{Screen} class funciona criando e editando telas de desenho. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_screen_ab41e0f2754e0a7831a8fc3211bcdabca}\label{class_screen_ab41e0f2754e0a7831a8fc3211bcdabca}} 
+\index{Screen@{Screen}!Screen@{Screen}}
+\index{Screen@{Screen}!Screen@{Screen}}
+\subsubsection{\texorpdfstring{Screen()}{Screen()}}
+{\footnotesize\ttfamily Screen\+::\+Screen (\begin{DoxyParamCaption}\item[{int}]{nlin\+\_\+,  }\item[{int}]{ncol\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_screen}{Screen} Cria uma tela vazia de tamanho pŕe-\/definido e com brush padrão \char`\"{}\#\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nlin\+\_\+} & Número de linhas da matriz da tela \\
+\hline
+{\em ncol\+\_\+} & Número de colunas da matriz da tela \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_screen_a12eef567d26f6cb00981da6384be2eac}\label{class_screen_a12eef567d26f6cb00981da6384be2eac}} 
+\index{Screen@{Screen}!new\+Matriz@{new\+Matriz}}
+\index{new\+Matriz@{new\+Matriz}!Screen@{Screen}}
+\subsubsection{\texorpdfstring{new\+Matriz()}{newMatriz()}}
+{\footnotesize\ttfamily void Screen\+::new\+Matriz (\begin{DoxyParamCaption}\item[{int}]{nlin\+\_\+,  }\item[{int}]{ncol\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+new\+Matriz Define o tamanho de uma tela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Número} & de linhas da matriz da tela \\
+\hline
+{\em ncol\+\_\+} & Número de colunas da matriz da tela \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_screen_a01312ae6a1168ec0a02c24877059571f}\label{class_screen_a01312ae6a1168ec0a02c24877059571f}} 
+\index{Screen@{Screen}!set\+Brush@{set\+Brush}}
+\index{set\+Brush@{set\+Brush}!Screen@{Screen}}
+\subsubsection{\texorpdfstring{set\+Brush()}{setBrush()}}
+{\footnotesize\ttfamily void Screen\+::set\+Brush (\begin{DoxyParamCaption}\item[{char}]{brush\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+set\+Brush Muda o caractére do desenho. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em brush\+\_\+} & Carcatére o desenho. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_screen_ae6bea81c57a22d226507c3c26fa95ee0}\label{class_screen_ae6bea81c57a22d226507c3c26fa95ee0}} 
+\index{Screen@{Screen}!set\+Pixel@{set\+Pixel}}
+\index{set\+Pixel@{set\+Pixel}!Screen@{Screen}}
+\subsubsection{\texorpdfstring{set\+Pixel()}{setPixel()}}
+{\footnotesize\ttfamily void Screen\+::set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+set\+Pixel Desenha um pixel da matriz usando o caratere guardado em \textquotesingle{}brush\textquotesingle{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & É a coordenada \textquotesingle{}x\textquotesingle{} do pixel a ser inserido. \\
+\hline
+{\em y} & É a coordenada \textquotesingle{}x\textquotesingle{} do pixel a ser inserido. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_screen_aab6a2880746bfe1b7964817cc8f0989e}\label{class_screen_aab6a2880746bfe1b7964817cc8f0989e}} 
+\index{Screen@{Screen}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Screen@{Screen}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\hyperlink{class_screen}{Screen} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+operator $<$$<$ Envia um objeto da classe \hyperlink{class_screen}{Screen} como saída. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Função de saída da biblioteca padrão c++ \\
+\hline
+{\em t} & Objeto que será impresso. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Impressão do objeto t. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+screen.\+h\item 
+screen.\+cpp\end{DoxyCompactItemize}

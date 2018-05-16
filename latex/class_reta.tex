@@ -1,0 +1,113 @@
+\hypertarget{class_reta}{}\section{Reta Class Reference}
+\label{class_reta}\index{Reta@{Reta}}
+
+
+The \hyperlink{class_reta}{Reta} class É uma classe concreta derivada d classe \hyperlink{class_figura_geometrica}{Figura\+Geometrica} que cria uma reta.  
+
+
+
+
+{\ttfamily \#include $<$reta.\+h$>$}
+
+
+
+Inheritance diagram for Reta\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_reta__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reta\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_reta__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_reta_a9e125389d2176bba3c1430f5041beb83}{Reta} (int x1\+\_\+, int y1\+\_\+, int x2\+\_\+, int y2\+\_\+)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_reta}{Reta} Cria um reta que vai do ponto (x1,y1) até o ponto (x2,y2) \end{DoxyCompactList}\item 
+void \hyperlink{class_reta_ac2e9805183cd474b62bffd8b032cd780}{draw} (\hyperlink{class_screen}{Screen} \&t)
+\begin{DoxyCompactList}\small\item\em draw Desenha uma reta na tela t. \end{DoxyCompactList}\item 
+int \hyperlink{class_reta_ac148699b1fd8a77732d9e0546318ad58}{Sinal} (float n)
+\begin{DoxyCompactList}\small\item\em Sinal Analisa o sinal de um número em ponto flutuante. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_reta}{Reta} class É uma classe concreta derivada d classe \hyperlink{class_figura_geometrica}{Figura\+Geometrica} que cria uma reta. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_reta_a9e125389d2176bba3c1430f5041beb83}\label{class_reta_a9e125389d2176bba3c1430f5041beb83}} 
+\index{Reta@{Reta}!Reta@{Reta}}
+\index{Reta@{Reta}!Reta@{Reta}}
+\subsubsection{\texorpdfstring{Reta()}{Reta()}}
+{\footnotesize\ttfamily Reta\+::\+Reta (\begin{DoxyParamCaption}\item[{int}]{x1\+\_\+,  }\item[{int}]{y1\+\_\+,  }\item[{int}]{x2\+\_\+,  }\item[{int}]{y2\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_reta}{Reta} Cria um reta que vai do ponto (x1,y1) até o ponto (x2,y2) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1\+\_\+} & Coordenada x do ponto 1 \\
+\hline
+{\em y1\+\_\+} & Coordenada y do ponto 1 \\
+\hline
+{\em x2\+\_\+} & Coordenada x do ponto 2 \\
+\hline
+{\em y2\+\_\+} & Coordenada y do ponto 2 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_reta_ac2e9805183cd474b62bffd8b032cd780}\label{class_reta_ac2e9805183cd474b62bffd8b032cd780}} 
+\index{Reta@{Reta}!draw@{draw}}
+\index{draw@{draw}!Reta@{Reta}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Reta\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_screen}{Screen} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw Desenha uma reta na tela t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Tela em que será desenhada a reta. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_figura_geometrica_a8ee8dedc060b6059a805ea091aef2c41}{Figura\+Geometrica}.
+
+\mbox{\Hypertarget{class_reta_ac148699b1fd8a77732d9e0546318ad58}\label{class_reta_ac148699b1fd8a77732d9e0546318ad58}} 
+\index{Reta@{Reta}!Sinal@{Sinal}}
+\index{Sinal@{Sinal}!Reta@{Reta}}
+\subsubsection{\texorpdfstring{Sinal()}{Sinal()}}
+{\footnotesize\ttfamily int Reta\+::\+Sinal (\begin{DoxyParamCaption}\item[{float}]{n }\end{DoxyParamCaption})}
+
+
+
+Sinal Analisa o sinal de um número em ponto flutuante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Número a ser analisado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1, se n for postivo; 0, se n=0; -\/1, se n for negativo 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+reta.\+h\item 
+reta.\+cpp\end{DoxyCompactItemize}
